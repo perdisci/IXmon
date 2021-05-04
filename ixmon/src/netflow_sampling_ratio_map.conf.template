@@ -1,0 +1,4 @@
+# The default sampling rate is 1
+# Use this file to specify a custom sampling rate
+# format: router_IP sampling rate
+# example 10.0.0.1 1000
