@@ -282,7 +282,7 @@ set(Boost_DETAILED_FAILURE_MSG ON)
 
 # Adding Boost libraries manually because find_package(Boost) failed
 target_link_libraries(ixmon /opt/boost_1_58_0/stage/lib/libboost_thread.so /opt/boost_1_58_0/stage/lib/libboost_system.so /opt/boost_1_58_0/stage/lib/libboost_program_options.so /opt/boost_1_58_0/stage/lib/libboost_regex.so)
-target_link_libraries(fast_library /opt/boost_1_58_0/stage/lib/libboost_thread.so)
+target_link_libraries(fast_library /opt/boost_1_58_0/stage/lib/libboost_thread.so /opt/boost_1_58_0/stage/lib/libboost_regex.so)
 #####
 
 target_link_libraries(fast_library patricia)
