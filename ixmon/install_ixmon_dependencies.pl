@@ -534,7 +534,8 @@ sub install_wandio {
 sub install_bgpstream {
 
   my $distro_file_name = 'bgpstream-1.1.0.tar.gz';
-  my $url = 'http://bgpstream.caida.org/bundles/caidabgpstreamwebhomepage/dists/bgpstream-1.1.0.tar.gz';
+  # my $url = 'http://bgpstream.caida.org/bundles/caidabgpstreamwebhomepage/dists/bgpstream-1.1.0.tar.gz';
+  my $url = 'https://github.com/perdisci/IXmon/raw/main/ixmon/dependencies/bgpstream-1.1.0.tar.gz';
 
   chdir $temp_folder_for_building_project;
 
@@ -557,7 +558,8 @@ sub install_bgpstream {
   exec_command("./make check"); 
   exec_command("sudo make install"); 
   exec_command("sudo ldconfig");
-  exec_commands("ln -s /usr/local/lib/libbgpstream.so.2 /lib");
+  # exec_commands("ln -s /usr/local/lib/libbgpstream.so.2 /lib");
+  # exec_commands("sudo ln -s /usr/lib/lib/libbgpstream.so.2 /lib");
 
   print "\n";
 }
