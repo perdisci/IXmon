@@ -1,0 +1,27 @@
+#ifndef FAST_PLATFORM_H
+#define FAST_PLATFORM_H
+
+// This file automatically generated for your platform (Linux, FreeBSD and others) with cmake
+
+/* Platform specific paths */
+
+std::string ixmon_version = "${IXMON_APPLICATION_VERSION}";
+
+std::string pid_path = "/tmp/ixmon.pid";
+std::string global_config_path = "./ixmon.conf";
+
+std::string log_file_path = "/tmp/ixmon.log";
+std::string attack_details_folder = "/tmp/fastnetmon_attacks";
+
+// Default path to notify script
+std::string notify_script_path = "/usr/local/bin/notify_about_attack.sh";
+
+// Default path to file with networks for whitelising
+std::string white_list_path = "/src/networks_whitelist";
+
+// Default path to file with all networks listing
+std::string networks_list_path = "/src/networks_list";
+
+/* Platform specific paths end */
+
+#endif
