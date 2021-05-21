@@ -16,7 +16,7 @@ First, see the README file under `ixmon/dependencies` for pre-requisite
 packages. Then run `install_ixmon_dependencies.pl`
 All needed dependencies, except for `bgpstream`, should be automatically installed. According to our
 tests, this should work well on modern Ubuntu and Debian Linux distributions
-(e.g., Ubuntu server 16.04 or Debian jessie). 
+(e.g., Ubuntu server 16.04 or Debian jessie). Please uninstall any older versions of `log4cpp` before running `install_ixmon_dependencies.pl`.
 
 Make sure CAIDA's `bgpstream` is installed (it should be installed by our installation script), and that `libbgpstream.so.2` is in your `LD_LIBRARY_PATH` (see also https://bgpstream.caida.org/docs/install/bgpstream)
 
